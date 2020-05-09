@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="reset.css">
 
     <script>
-        function cauculamedia() {
+        function calcularMedia() {
             let jovem = parseInt(jov.value)
             let adulto = parseInt(adt.value)
             let idoso = parseInt(jov.value)
-            let resultado = (jovem + adulto + idoso) / 3
-            if (resultado <= 50) {
-                resuldado.innerText
+            let result_media = (jovem + adulto + idoso) / 3
+            if (result_media  >=50 ) {
+                resultado.innerText = "Não Suporta Vagas"
             } else {
-                console.log("LOTADO")
+                resultado.innerText = "Há Vaga Disponível"
 
             }
         }
@@ -31,15 +31,16 @@
         <div class="jovd"><input type="number" id="jov" placeholder="Digite a qtd de jovens"></div>
         <div class="adtd"><input type="number" id="adt" placeholder="Digite a qtd de adultos"></div>
         <div class="ids"><input type="number" id="ids" placeholder="Digite a qtd de idosos"></div>
-        <div> <button onclick="cauculamedia()"> Calcular </button> </div>
+        <div> <button onclick="calcularMedia()"> Calcular </button> </div>
 
-        <div> <label> A média é:</label>
-            <label id="resuldado"> </label>
-        </div>
-
-        <div> <label>Verificando</label>
+        <div> <label>Verificando ... </label>
             <label id="vaga"> </label>
         </div>
+
+        <div> <label> A média é:</label>
+            <label id="resultado"> </label>
+        </div>
+        
     </div>
 
 </body>
