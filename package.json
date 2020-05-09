@@ -1,0 +1,23 @@
+{
+  "name": "coronavirus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abulei/CoronaVirus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abulei/CoronaVirus/issues"
+  },
+  "homepage": "https://github.com/Abulei/CoronaVirus#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
