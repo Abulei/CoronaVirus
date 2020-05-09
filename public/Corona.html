@@ -17,6 +17,7 @@
             if (resultado <= 50) {
                 resuldado.innerText
             } else {
+                console.log("LOTADO")
 
             }
         }
@@ -30,10 +31,14 @@
         <div class="jovd"><input type="number" id="jov" placeholder="Digite a qtd de jovens"></div>
         <div class="adtd"><input type="number" id="adt" placeholder="Digite a qtd de adultos"></div>
         <div class="ids"><input type="number" id="ids" placeholder="Digite a qtd de idosos"></div>
-        <div class="bt"><input type="button" value="Media"></div>
+        <div> <button onclick="cauculamedia()"> Calcular </button> </div>
 
         <div> <label> A média é:</label>
             <label id="resuldado"> </label>
+        </div>
+
+        <div> <label>Verificando</label>
+            <label id="vaga"> </label>
         </div>
     </div>
 
