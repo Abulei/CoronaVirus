@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Coronga</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
 
@@ -15,9 +15,11 @@
             let idoso = parseInt(jov.value)
             let result_media = (jovem + adulto + idoso) / 3
             if (result_media  >=50 ) {
-                resultado.innerText = "Não Suporta Vagas"
+                resultado.innerText = result_media
+                vaga.innerText = "Não Suporta Vagas"
             } else {
-                resultado.innerText = "Há Vaga Disponível"
+                resultado.innerText = result_media
+                vaga.innerText = "Há vaga Disponível"
 
             }
         }
@@ -26,6 +28,9 @@
 </head>
 
 <body>
+    <div>
+        <h1>Média de Vagas</h1>
+    </div>
     <div class="cxg">
         <h2 class="hea">Media Corona</h2>
         <div class="jovd"><input type="number" id="jov" placeholder="Digite a qtd de jovens"></div>
