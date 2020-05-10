@@ -12,9 +12,9 @@
         function calcularMedia() {
             let jovem = parseInt(jov.value)
             let adulto = parseInt(adt.value)
-            let idoso = parseInt(jov.value)
+            let idoso = parseInt(ids.value)
             let result_media = (jovem + adulto + idoso) / 3
-            if (result_media  >=50 ) {
+            if (result_media >= 50) {
                 resultado.innerText = result_media
                 vaga.innerText = "Não Suporta Vagas"
             } else {
@@ -28,24 +28,36 @@
 </head>
 
 <body>
-    <div>
-        <h1>Média de Vagas</h1>
-    </div>
-    <div class="cxg">
-        <h2 class="hea">Media Corona</h2>
-        <div class="jovd"><input type="number" id="jov" placeholder="Digite a qtd de jovens"></div>
-        <div class="adtd"><input type="number" id="adt" placeholder="Digite a qtd de adultos"></div>
-        <div class="ids"><input type="number" id="ids" placeholder="Digite a qtd de idosos"></div>
-        <div> <button onclick="calcularMedia()"> Calcular </button> </div>
+    <div class="login-box">
+        <h1>Média de idade</h1>
 
-        <div> <label>Verificando ... </label>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" id="jov" placeholder="Digite a qtd de jovens">
+        </div>
+
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" id="adt" placeholder="Digite a qtd de adultos">
+        </div>
+
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" id="ids" placeholder="Digite a qtd de idosos">
+        </div>
+        <br><br>
+        <div onclick="calcularMedia()" class="bt">
+            <a type="button">Media</a>
+        </div>
+        <br><br>
+        <div class="la"> <label class="labex"> </label>
             <label id="vaga"> </label>
         </div>
-
-        <div> <label> A média é:</label>
+        <br><br>
+        <div class="la"> <label class="labex"></label>
             <label id="resultado"> </label>
         </div>
-        
+
     </div>
 
 </body>
